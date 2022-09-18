@@ -3,9 +3,11 @@
     <div>
       <NavBar />
     </div>
-    <v-main>
-      <router-view />
-    </v-main>
+    <div class="bodcolor">
+      <v-main>
+        <router-view />
+      </v-main>
+    </div>
   </v-app>
 </template>
 

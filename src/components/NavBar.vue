@@ -1,15 +1,13 @@
 <template lang="">
-  <div>
-    <template>
-      <nav class="navbar">
-        <h1>T-shirt zone</h1>
-        <div>
-          <router-link class="navlink" to="/">Home</router-link> |
-          <router-link class="navlink" to="/about">About</router-link> |
-          <router-link class="navlink" to="/carts">Cart</router-link>
-        </div>
-      </nav>
-    </template>
+  <div class="bgnav">
+    <nav class="navbar">
+      <h1>T-shirt zone</h1>
+      <div>
+        <router-link class="navlink" to="/">Home</router-link> |
+        <router-link class="navlink" to="/about">About</router-link> |
+        <router-link class="navlink" to="/carts">Cart</router-link>
+      </div>
+    </nav>
   </div>
 </template>
 <script>
@@ -18,12 +16,14 @@ export default {
 };
 </script>
 <style lang="scss">
+.bgnav {
+  background-color: #000;
+}
 .navbar {
-  background-color: seagreen;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 8px 30px;
+  padding: 15px 30px;
   h1 {
     color: rgb(250, 246, 0);
   }
